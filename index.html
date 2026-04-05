@@ -619,11 +619,11 @@ body.lang-en li.en{display:list-item !important}
     <div>
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/mlgoadbl" method="POST">
         <div class="form-row">
-          <div class="fg"><label class="fr">Prénom</label><label class="en">First name</label><input type="text" name="prenom" required placeholder="Marie"></div>
-          <div class="fg"><label class="fr">Nom</label><label class="en">Last name</label><input type="text" name="nom" required placeholder="Tremblay"></div>
+          <div class="fg"><label class="fr">Prénom</label><label class="en">First name</label><input type="text" name="prenom" required></div>
+          <div class="fg"><label class="fr">Nom</label><label class="en">Last name</label><input type="text" name="nom" required></div>
         </div>
-        <div class="fg"><label class="fr">Téléphone</label><label class="en">Phone</label><input type="tel" name="telephone" placeholder="514-555-1234"></div>
-        <div class="fg"><label class="fr">Courriel</label><label class="en">Email</label><input type="email" name="email" required placeholder="marie@exemple.com"></div>
+        <div class="fg"><label class="fr">Téléphone</label><label class="en">Phone</label><input type="tel" name="telephone"></div>
+        <div class="fg"><label class="fr">Courriel</label><label class="en">Email</label><input type="email" name="email" required></div>
         <input type="hidden" name="_replyto" value="">
         <input type="text" name="_gotcha" style="display:none">
         <input type="hidden" name="_subject" value="[Site web] Nouveau message">
@@ -642,7 +642,7 @@ body.lang-en li.en{display:list-item !important}
             <option value="autre">Autre / Other</option>
           </select>
         </div>
-        <div class="fg"><label class="fr">Votre question</label><label class="en">Your question</label><textarea name="message" required placeholder="Décrivez votre situation..."></textarea></div>
+        <div class="fg"><label class="fr">Votre question</label><label class="en">Your question</label><textarea name="message" required></textarea></div>
         <button type="submit" class="form-btn"><span class="fr">Envoyer</span><span class="en">Send</span></button>
       </form>
       <div id="form-ok">
