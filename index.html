@@ -236,10 +236,11 @@ body.lang-en li.en{display:list-item !important}
 <div class="w topbar-inner">
   <a href="#" class="topbar-logo" aria-label="Dr Yves Bendavid — accueil / home">Dr Yves Bendavid</a>
   <div class="topbar-nav">
+    <a href="#contact"><span class="fr">Contact</span><span class="en">Contact</span></a>
     <a href="#about"><span class="fr">À propos</span><span class="en">About</span></a>
     <a href="#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a>
     <a href="#faq"><span class="fr">FAQ</span><span class="en">FAQ</span></a>
-    <a href="#contact"><span class="fr">Contact</span><span class="en">Contact</span></a>
+    <a href="conseils-post-operatoires.html" style="color:#FF7A6B"><span class="fr">Conseils post-opératoires</span><span class="en">Post-operative Advice</span></a>
   </div>
   <div class="topbar-right">
     <div class="lang-toggle">
@@ -667,6 +668,7 @@ body.lang-en li.en{display:list-item !important}
       <li><a href="#about"><span class="fr">À propos</span><span class="en">About</span></a></li>
       <li><a href="#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a></li>
       <li><a href="#faq"><span class="fr">FAQ</span><span class="en">FAQ</span></a></li>
+      <li><a href="conseils-post-operatoires.html"><span class="fr">Conseils post-opératoires</span><span class="en">Post-operative Advice</span></a></li>
       <li><a href="#contact"><span class="fr">Contact</span><span class="en">Contact</span></a></li>
       <li><a href="https://www.ratemds.com/doctor-ratings/82586/Dr-Yves-Bendavid-Montreal-QC.html/" target="_blank" rel="noopener noreferrer"><span class="fr">Avis de patients</span><span class="en">Patient reviews</span></a></li>
     </ul></div>
@@ -698,7 +700,10 @@ function setLang(lang){
   document.getElementById('btn-fr').className=lang==='fr'?'active':'';
   document.getElementById('btn-en').className=lang==='en'?'active':'';
   document.documentElement.lang=lang;
+  try{localStorage.setItem('siteLang',lang);}catch(e){}
 }
+// Conserver la langue choisie d'une page à l'autre
+(function(){try{if(localStorage.getItem('siteLang')==='en'){setLang('en');}}catch(e){}})();
 function toggleMenu(){
   document.getElementById('hamburger').classList.toggle('open');
   document.querySelector('.topbar-nav').classList.toggle('open');
