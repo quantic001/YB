@@ -194,20 +194,24 @@ section{padding:80px 0}
 .fg textarea{resize:vertical;min-height:110px}
 .form-btn{width:100%;padding:13px;background:#5B7B9A;color:#fff;border:none;border-radius:6px;font-family:inherit;font-size:.9rem;font-weight:600;cursor:pointer;letter-spacing:.03em}
 .form-btn:hover{opacity:.88}
+.form-privacy{margin-top:12px;font-size:.78rem;line-height:1.55;color:#6B6B6B;text-align:center}
+.form-privacy a{color:#4A6A89;text-decoration:underline}
 #form-ok{display:none;text-align:center;padding:32px}
 
 /* === FOOTER === */
 footer{background:#2D2D2D;color:rgba(255,255,255,.5);padding:40px 0 24px}
 .ft-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-bottom:28px}
 .ft-brand{font-family:'Fraunces',Georgia,serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:6px}
-.ft-brand-sub{font-size:.78rem;opacity:.4}
+.ft-brand-sub{font-size:.78rem;color:#B3B3B3}
 .ft-col h5{color:rgba(255,255,255,.7);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;font-weight:700}
 .ft-col ul{list-style:none}
 .ft-col ul li{margin-bottom:5px;color:rgba(255,255,255,.4);font-size:.82rem}
 .ft-col ul li a{color:rgba(255,255,255,.4);font-size:.82rem;text-decoration:none}
 .ft-col ul li a:hover{color:rgba(255,255,255,.8)}
-.ft-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:16px;font-size:.72rem;opacity:.35;display:flex;justify-content:space-between}
-.disclaimer{background:#2D2D2D;color:rgba(255,255,255,.5);opacity:.4;padding:0 28px 24px;text-align:center;font-size:.78rem;line-height:1.7;border-top:1px solid rgba(255,255,255,.08)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:16px;font-size:.72rem;color:#B3B3B3;display:flex;justify-content:space-between}
+.ft-bottom a{color:#B3B3B3;text-decoration:underline}
+.ft-bottom a:hover{color:#fff}
+.disclaimer{background:#2D2D2D;color:#B3B3B3;padding:0 28px 24px;text-align:center;font-size:.78rem;line-height:1.7;border-top:1px solid rgba(255,255,255,.08)}
 
 /* === LANG === */
 .en{display:none !important}
@@ -245,7 +249,7 @@ body.lang-en li.en{display:list-item !important}
     <a href="#about"><span class="fr">À propos</span><span class="en">About</span></a>
     <a href="#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a>
     <a href="#faq"><span class="fr">FAQ</span><span class="en">FAQ</span></a>
-    <a href="conseils-post-operatoires.html" style="color:#FF7A6B"><span class="fr">Conseils post-opératoires</span><span class="en">Post-operative Advice</span></a>
+    <a href="conseils-post-operatoires.html"><span class="fr">Conseils post-opératoires</span><span class="en">Post-operative Advice</span></a>
   </div>
   <div class="topbar-right">
     <div class="lang-toggle">
@@ -352,7 +356,7 @@ body.lang-en li.en{display:list-item !important}
       <h3 class="fr">Chirurgie de la vésicule biliaire</h3><h3 class="en">Gallbladder Surgery</h3>
       <p class="fr">Cholécystectomie laparoscopique pour lithiase biliaire symptomatique, cholécystite, pancréatite biliaire et polypes vésiculaires.</p>
       <p class="en">Laparoscopic cholecystectomy for symptomatic gallstones, cholecystitis, biliary pancreatitis, and gallbladder polyps.</p>
-      <div class="exp-tags"><span class="exp-tag fr">Laparoscopique</span><span class="exp-tag en">Laparoscopic</span><span class="exp-tag fr">Urgences</span><span class="exp-tag en">Emergency</span></div>
+      <div class="exp-tags"><span class="exp-tag fr">Laparoscopique</span><span class="exp-tag en">Laparoscopic</span><span class="exp-tag fr">Cholécystite aiguë</span><span class="exp-tag en">Acute cholecystitis</span></div>
     </div>
     <div class="exp-card"><div class="exp-divider"></div>
       <h3 class="fr">Endoscopie digestive</h3><h3 class="en">GI Endoscopy</h3>
@@ -653,6 +657,8 @@ body.lang-en li.en{display:list-item !important}
         </div>
         <div class="fg"><label class="fr" for="f-msg">Votre question</label><label class="en" for="f-msg">Your question</label><textarea id="f-msg" name="message" required></textarea></div>
         <button type="submit" class="form-btn"><span class="fr">Envoyer</span><span class="en">Send</span></button>
+        <p class="form-privacy fr">Veuillez ne pas transmettre de renseignements médicaux détaillés. Vos coordonnées servent uniquement à vous répondre. <a href="/confidentialite">Politique de confidentialité</a></p>
+        <p class="form-privacy en">Please do not send detailed medical information. Your contact details are used only to reply to you. <a href="/confidentialite">Privacy policy</a></p>
       </form>
       <div id="form-ok">
         <p style="font-size:1.8rem;margin-bottom:8px;color:#5B7B9A">&#10003;</p>
@@ -685,7 +691,7 @@ body.lang-en li.en{display:list-item !important}
     </ul></div>
   </div>
   <div class="ft-bottom">
-    <span>&copy; 2026 Dr Yves Bendavid</span>
+    <span>&copy; 2026 Dr Yves Bendavid · <a href="/confidentialite"><span class="fr">Politique de confidentialité</span><span class="en">Privacy policy</span></a></span>
     <span>Montréal, Québec</span>
   </div>
 </div>
