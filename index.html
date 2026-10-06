@@ -152,6 +152,22 @@ section{padding:80px 0}
 .exp-tag{font-size:.68rem;background:rgba(91,123,154,.1);color:#5B7B9A;border-radius:3px;padding:3px 8px;font-weight:600;letter-spacing:.02em}
 .exp-divider{width:24px;height:2px;background:#5B7B9A;margin-bottom:14px;border-radius:1px}
 
+/* === CAPSULES HERNIE / PROTHESE === */
+.hx-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;align-items:start}
+.hx-card{background:#F9F6F1;border:1px solid #E8E4DD;border-radius:10px;padding:28px 26px;scroll-margin-top:72px}
+.hx-kicker{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4A6A89;margin-bottom:6px}
+.hx-card h3{font-size:1.2rem;margin-bottom:12px}
+.hx-card p{font-size:.92rem;line-height:1.7;margin-bottom:12px}
+.hx-card .hx-kicker{font-size:.72rem;margin-bottom:6px}
+.hx-list{list-style:none;margin:0 0 12px}
+.hx-list li{position:relative;padding-left:16px;margin-bottom:8px;font-size:.92rem;line-height:1.65}
+.hx-list li::before{content:'';position:absolute;left:0;top:.62em;width:6px;height:6px;background:#5B7B9A;border-radius:50%}
+.hx-list strong{color:#2D2D2D}
+.hx-card .callout{margin:4px 0 12px}
+.hx-card .callout p{margin-bottom:0}
+.hx-card p.hx-more{font-size:.86rem;margin-bottom:0}
+.faq-item[id]{scroll-margin-top:72px}
+
 /* === FAQ === */
 .faq-list{max-width:760px;margin:0 auto}
 .faq-item{border-bottom:1px solid #E8E4DD;background:transparent}
@@ -218,11 +234,13 @@ body.lang-en li.en{display:list-item !important}
   .hero-inner{flex-direction:column}.hero-photo-col{display:none}
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .exp-grid{grid-template-columns:1fr 1fr}
+  .hx-grid{grid-template-columns:1fr}
   .metrics-grid{grid-template-columns:repeat(2,1fr)}
   .ft-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   .exp-grid{grid-template-columns:1fr}
+  .hx-card{padding:22px 18px}
   .form-row{grid-template-columns:1fr}
   .hero h1{font-size:2rem}
 }
@@ -355,6 +373,59 @@ body.lang-en li.en{display:list-item !important}
       <div class="exp-tags"><span class="exp-tag fr">Gastroscopie</span><span class="exp-tag en">Gastroscopy</span><span class="exp-tag fr">Coloscopie</span><span class="exp-tag en">Colonoscopy</span></div>
     </div>
   </div>
+
+  <!-- CAPSULES HERNIE INGUINALE + PROTHESE (apercu PR3, a valider par Yves) -->
+  <div class="hx-grid">
+
+    <!-- Capsule : Hernie inguinale -->
+    <div class="hx-card" id="hernie-inguinale">
+      <p class="hx-kicker fr">En bref</p><p class="hx-kicker en">In brief</p>
+      <h3 class="fr">Hernie inguinale : l'essentiel</h3>
+      <h3 class="en">Inguinal Hernia: The Essentials</h3>
+      <p class="fr">La hernie inguinale est une faiblesse de la paroi abdominale au niveau de l'aine, par laquelle du tissu graisseux ou une partie de l'intestin fait saillie. C'est la plus fréquente des hernies.</p>
+      <p class="en">An inguinal hernia is a weak spot in the abdominal wall at the groin, through which fatty tissue or part of the bowel bulges out. It is the most common type of hernia.</p>
+      <ul class="hx-list fr">
+        <li><strong>Signes habituels :</strong> une bosse à l'aine, plus visible debout ou à l'effort, qui disparaît souvent en position couchée; une sensation de lourdeur, de tiraillement ou d'inconfort.</li>
+        <li><strong>Options de réparation :</strong> avec ou sans prothèse (treillis), par chirurgie ouverte ou par laparoscopie. Le choix se fait en consultation, selon le type de hernie, votre anatomie et vos préférences.</li>
+        <li><strong>Le jour de l'opération :</strong> il s'agit habituellement d'une chirurgie d'un jour; le retour à la maison se fait le jour même.</li>
+      </ul>
+      <ul class="hx-list en">
+        <li><strong>Typical signs:</strong> a bulge in the groin that is more visible when standing or straining and often goes away when lying down; a feeling of heaviness, pulling or discomfort.</li>
+        <li><strong>Repair options:</strong> with or without mesh, through open or laparoscopic surgery. The choice is made at your consultation, based on the type of hernia, your anatomy and your preferences.</li>
+        <li><strong>Day of surgery:</strong> this is usually day surgery; you go home the same day.</li>
+      </ul>
+      <div class="callout">
+        <p class="fr"><strong>Consultez à l'urgence sans tarder</strong> si la bosse devient douloureuse, dure ou ne rentre plus, surtout si elle s'accompagne de nausées ou de vomissements.</p>
+        <p class="en"><strong>Go to the emergency department right away</strong> if the bulge becomes painful, hard or can no longer be pushed back in, especially if you also have nausea or vomiting.</p>
+      </div>
+      <p class="hx-more fr">Pour en savoir plus : <a href="#faq">questions fréquentes</a>.</p>
+      <p class="hx-more en">To learn more: <a href="#faq">frequently asked questions</a>.</p>
+    </div>
+
+    <!-- Section : Prothese (treillis) -->
+    <div class="hx-card" id="prothese">
+      <p class="hx-kicker fr">À savoir</p><p class="hx-kicker en">Good to know</p>
+      <h3 class="fr">Prothèse (treillis) : ce qu'il faut savoir</h3>
+      <h3 class="en">Hernia Mesh: What You Should Know</h3>
+      <ul class="hx-list fr">
+        <li><strong>Qu'est-ce que c'est?</strong> Un fin treillis souple, le plus souvent en polypropylène, placé contre la paroi abdominale pour renforcer la zone affaiblie. Avec le temps, vos propres tissus s'y incorporent.</li>
+        <li><strong>Pourquoi l'utiliser?</strong> La prothèse renforce la réparation sans mettre les tissus sous tension. La réparation avec prothèse est la plus pratiquée dans le monde pour la hernie inguinale et convient à un large éventail de situations.</li>
+        <li><strong>Les risques, en toute transparence :</strong> le plus discuté est la douleur chronique (au-delà de trois mois), qui peut aussi survenir après une réparation sans prothèse. L'infection de la prothèse est rare, et son retrait n'est que très rarement nécessaire.</li>
+        <li><strong>Une autre option pour certains patients :</strong> la réparation tissulaire sans prothèse, comme l'opération de Shouldice, convient à des patients sélectionnés, notamment pour certaines hernies inguinales primaires.</li>
+      </ul>
+      <ul class="hx-list en">
+        <li><strong>What is it?</strong> A thin, flexible mesh, usually made of polypropylene, placed against the abdominal wall to reinforce the weak area. Over time, your own tissue grows into it.</li>
+        <li><strong>Why use it?</strong> Mesh reinforces the repair without pulling the tissues together under tension. Mesh repair is the most common approach to inguinal hernia worldwide and suits a wide range of situations.</li>
+        <li><strong>The risks, stated plainly:</strong> the most discussed is chronic pain (lasting beyond three months), which can also occur after a repair without mesh. Mesh infection is rare, and removing the mesh is only very rarely needed.</li>
+        <li><strong>Another option for some patients:</strong> tissue repair without mesh, such as the Shouldice operation, is suited to selected patients, particularly for certain primary inguinal hernias.</li>
+      </ul>
+      <p class="fr">Les options discutées en consultation tiennent compte du type de hernie, de vos antécédents et de vos préférences.</p>
+      <p class="en">The options discussed at your consultation take into account your type of hernia, your medical history and your preferences.</p>
+      <p class="hx-more fr">Pour plus de détails : <a href="#faq-prothese" onclick="openFaq('faq-prothese')">Qu'est-ce qu'une prothèse herniaire?</a> · <a href="#faq-sans-prothese" onclick="openFaq('faq-sans-prothese')">Peut-on réparer une hernie sans prothèse?</a></p>
+      <p class="hx-more en">More details: <a href="#faq-prothese" onclick="openFaq('faq-prothese')">What is a hernia mesh?</a> · <a href="#faq-sans-prothese" onclick="openFaq('faq-sans-prothese')">Can a hernia be repaired without mesh?</a></p>
+    </div>
+
+  </div>
 </div>
 </section>
 
@@ -425,7 +496,7 @@ body.lang-en li.en{display:list-item !important}
     </div></div></div>
 
     <!-- Q5 : Prothèses herniaires -->
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="fr">Qu'est-ce qu'une prothèse herniaire (filet, mèche, treillis)?</span><span class="en">What is a hernia mesh (prosthesis)?</span></span><span class="faq-chevron">&#9662;</span></button><div class="faq-a"><div class="faq-a-inner">
+    <div class="faq-item" id="faq-prothese"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="fr">Qu'est-ce qu'une prothèse herniaire (filet, mèche, treillis)?</span><span class="en">What is a hernia mesh (prosthesis)?</span></span><span class="faq-chevron">&#9662;</span></button><div class="faq-a"><div class="faq-a-inner">
       <p class="fr">La prothèse herniaire est un dispositif médical implanté pour renforcer la paroi abdominale lors de la réparation d'une hernie. Elle est désignée sous plusieurs termes au Québec : <strong>filet, mèche</strong> (du terme anglais <em>mesh</em>), <strong>treillis, plaque, implant</strong> ou <strong>prothèse pariétale</strong>.</p>
       <p class="en">A hernia mesh is a medical device implanted to reinforce the abdominal wall during hernia repair. It goes by several terms: <strong>filet, mèche</strong> (from the English <em>mesh</em>), <strong>treillis, plaque, implant</strong>, or <strong>parietal prosthesis</strong>.</p>
       <div class="callout">
@@ -439,7 +510,7 @@ body.lang-en li.en{display:list-item !important}
     </div></div></div>
 
     <!-- Q6 : Sans prothèse -->
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="fr">Peut-on réparer une hernie sans prothèse?</span><span class="en">Can a hernia be repaired without mesh?</span></span><span class="faq-chevron">&#9662;</span></button><div class="faq-a"><div class="faq-a-inner">
+    <div class="faq-item" id="faq-sans-prothese"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="fr">Peut-on réparer une hernie sans prothèse?</span><span class="en">Can a hernia be repaired without mesh?</span></span><span class="faq-chevron">&#9662;</span></button><div class="faq-a"><div class="faq-a-inner">
       <p class="fr">Oui, et cette option mérite d'être discutée avec votre chirurgien. Les réparations tissulaires (sans prothèse) utilisent uniquement les structures anatomiques du patient — fascias, aponévroses, muscles — pour reconstruire la paroi abdominale. Elles ne conviennent pas à tous les cas, mais représentent une excellente option dans des indications bien choisies, notamment pour les <strong>hernies inguinales primaires</strong> chez des patients avec des tissus de bonne qualité.</p>
       <p class="en">Yes, and this option deserves discussion with your surgeon. Tissue repairs (without mesh) use only the patient's own anatomical structures — fascia, aponeurosis, muscles — to reconstruct the abdominal wall. They are not suitable for all cases, but represent an excellent option in well-selected indications, particularly for <strong>primary inguinal hernias</strong> in patients with good tissue quality.</p>
       <div class="callout">
@@ -729,6 +800,11 @@ function toggleFaq(btn){
     item.className='faq-item open';
     btn.setAttribute('aria-expanded','true');
   }
+}
+// Ouvrir une question de FAQ precise depuis un lien interne
+function openFaq(id){
+  var item=document.getElementById(id);
+  if(item&&item.className.indexOf('open')===-1){toggleFaq(item.querySelector('.faq-q'));}
 }
 // Initialize aria-expanded on all FAQ buttons
 document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('aria-expanded','false');});
